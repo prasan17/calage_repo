@@ -1,0 +1,25 @@
+.main__wrapper {
+  &--details {
+    display: grid;
+    min-height: 550px;
+    align-items: center;
+    padding: 0 40px;
+    grid-template-columns: none;
+    background: url("../assets/images/banner_logo.png") no-repeat,
+      linear-gradient(150deg, $wildStrawberry 0%, $funBlue 100%);
+    h1 {
+      display: flex;
+      color: $white;
+      width: 40%;
+      justify-content: end;
+      margin: auto 40px auto auto;
+      @media #{$breakpoint-mobile} {
+        margin: 0;
+        width: calc(100% - 40px);
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(40, 15, 90, 0.75);
+      }
+    }
+  }
+}

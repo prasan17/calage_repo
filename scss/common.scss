@@ -1,0 +1,76 @@
+/* Colors */
+
+$white: #fff;
+$black: #000;
+$elephant: #113546;
+$funBlue: #1b5cb2;
+$caribbeanGreen: #00d17c;
+$wildStrawberry: #ff2989;
+
+/* Colors */
+
+/* Fonts */
+
+$font-family-bold: Manrope-Bold, sans-serif;
+$font-family-semibold: Manrope-SemiBold, sans-serif;
+$font-family-regular: Manrope-Regular, sans-serif;
+
+@font-face {
+  font-family: "Manrope-Bold";
+  font-display: swap;
+  src: url("../assets/fonts/Manrope-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Manrope-SemiBold";
+  font-display: swap;
+  src: url("../assets/fonts/Manrope-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Manrope-Regular";
+  font-display: swap;
+  src: url("../assets/fonts/Manrope-Regular.ttf") format("opentype");
+}
+
+/* Fonts */
+
+/* BreakPoints */
+
+$mobile: 767px;
+$tablet: 1024px;
+
+/* BreakPoints */
+
+/* Media Query */
+
+$breakpoint-mobile: "screen and (max-width: #{($mobile)})";
+$breakpoint-tablet: "screen and (max-width: #{($tablet)})";
+
+/* Media Query */
+
+/* Common Scss */
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  color: $white;
+  border-radius: 4px;
+}
+
+h1 {
+  line-height: 1.2;
+  font-size: 30px;
+  font-family: $font-family-bold;
+  @media #{$breakpoint-mobile} {
+    font-size: 24px;
+  }
+}
+
+/* Common Scss */
